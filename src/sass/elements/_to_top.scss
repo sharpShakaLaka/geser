@@ -1,0 +1,32 @@
+.top-link {
+    transition: all .2s ease-in-out;
+    position: fixed;
+    z-index: 2;
+    top: 140px;
+    left: 40px;
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    background: url(../icons/elements/to_top_inact.svg) center center no-repeat;
+    cursor: pointer;
+    &:hover {
+        background: url(../icons/elements/to_top_pressed.svg) center center no-repeat;
+    }
+    &:active {
+        background: url(../icons/elements/to_top_pressed.svg) center center no-repeat;
+    }
+}
+.show {
+    visibility: visible;
+    opacity: 1;
+}
+.hide {
+    visibility: hidden;
+    opacity: 0;
+}
+#order {
+    position: fixed;
+    z-index: 5;
+    bottom: 40px;
+    right: 40px;
+}

@@ -1,0 +1,18 @@
+
+.bounce {
+    animation-name: bounce;
+    animation-timing-function: ease;
+    animation-duration: 1.5s;
+}
+.bounce__second {
+    animation-name: bounce;
+    animation-timing-function: ease;
+    animation-duration: 1s;
+    animation-delay: 0.3s;
+}
+@keyframes bounce {
+    0%   { transform: translateY(0); }
+    30%  { transform: translateY(-30px); }
+    70%  { transform: translateY(0); }
+    100% { transform: translateY(0); }
+}

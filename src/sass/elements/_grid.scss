@@ -1,0 +1,16 @@
+.row {
+    display: flex;
+    &_inner {
+        margin-top: 28px;
+    }
+    &_outer {
+        margin-top: 60px;
+    }
+}
+.column {
+    position: relative;
+    width: 50%;
+    &:nth-child(2) {
+        padding-left: 40px;
+    }
+}

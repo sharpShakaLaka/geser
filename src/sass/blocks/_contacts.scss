@@ -1,0 +1,46 @@
+.contacts {
+    min-height: 1200px;
+    padding-bottom: 60px;
+    &__h2 {
+        padding-top: 200px;
+    }
+    &__row {
+        min-height: 224px;
+        position: relative;
+        &:nth-of-type(1) {
+            margin-top: 63px;
+        }
+    }
+    &__descr {
+        font-family: Montserrat;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 30px;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+    }
+    &__tel {
+        font-family: PT Sans;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 36px;
+        margin-bottom: 27px;
+        text-transform: uppercase;
+    }
+    &__address {
+        font-family: PT Sans;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 32px;
+        text-transform: uppercase;
+        width: 496px;
+        span {
+            text-decoration: underline;
+        }
+    }
+    &__icon {
+        position: absolute;
+        top: 0;
+        left: 680px;
+    }
+}

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>GESER</title>
+</head>
+<body>
+    <div class="top-link hide" id="to-top"></div>
+    <button class="btn btn__order hide" id="order">Заказать</button>
+    <header class="header">
+        <nav class="header__nav">
+            <div class="container">
+                <ul class="header__menu">
+                    <li class="header__item"><a data-scroll href="#services">Услуги</a></li>
+                    <li class="header__item"><a data-scroll href="#projects">Объекты</a></li>
+                    <li class="header__item"><a data-scroll href="#advantages">Преимущества</a></li>
+                    <li class="header__item"><a data-scroll href="#contacts">О нас</a></li>
+                    <li  class="header__tel">
+                        <a href="tel:+7 812 535 24 84" class="header__icon">
+                            <img id="inactive" src="icons/01_header/header_tel.svg" alt="">
+                            <img id="active" src="icons/01_header/header_tel_active.svg" alt="">
+                        </a>
+                        <a class="header__item" id="tel"  href="tel:+7 812 535 24 84">+7 812 535 24 84</a>
+                    </li>
+                </ul>    
+            </div>
+        </nav>
+        <div class="container header__container">
+            <div class="header__logo">
+                <div class="header__figure">
+                    <img src="icons/01_header/logo_tr.svg" alt="">
+                </div>
+                <div class="header__figure">
+                    <img src="icons/01_header/logo_el.svg" alt="">
+                </div>
+                <h1 class="header__name">Geser</h1>
+            </div>
+            <div class="header__descr">
+                Проектирование и монтаж систем вентиляции и кондиционирования
+            </div>
+            <button class="btn btn__order">Заказать</button>
+            <h2 id="services" class="header__h2 headings__h2">Наши услуги</h2>
+        </div>
+        <div class="header__img">
+            <img src="img/01_header/header_bottom_img.png" alt="">
+        </div>
+    </header>
+
+    <section class="services">
+        <div class="container services__container">
+            <div class="row">
+                <div class="column">
+                    <img class="services__img" src="icons/02_services/services_key.svg" alt="">
+                    <div class="services__header">Монтаж под ключ</div>
+                    <div class="services__descr row row_inner">
+                        Монтаж любого оборудования систем вентиляции и КВ, пуско-наладочные работы, паспортизация и сдача в эксплуатацию
+                    </div>
+                </div>
+                <div class="column">
+                    <img src="icons/02_services/services_design.svg" alt="" class="services__img">
+                    <div class="services__header">Проектирование</div>
+                    <div class="services__descr row row_inner">
+                        Работы выполняются строго по ТЗ заказчика, применяя современное импортное и отечественное оборудование
+                    </div>
+                </div>
+            </div>
+            <div class="row row_outer">
+                <div class="column">
+                    <img src="icons/02_services/services_supply.svg" alt="" class="services__img services__img_top">
+                    <div class="services__header">Комплектация <br> и поставка</div>
+                    <div class="services__descr row row_inner">
+                        Гэсэр берет на себя ответственность на поставку всех материалов и оборудования
+                    </div>
+                </div>
+                <div class="column">
+                    <img src="icons/02_services/services_guarantee.svg" alt="" class="services__img">
+                    <div class="services__header">Гарантийное обслуживание</div>
+                    <div class="services__descr row row_inner">
+                        Ремонтные работы, наладка и обслуживание оборудования
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="headings__h2 projects__h2">Наши объекты</h2>
+        </div>
+        <div class="separator"></div>
+        <div class="projects__img">
+            <img src="img/03_projects/projects_top_img.png" alt="">
+        </div>
+        <div class = slider__inner>
+            <div class="slider__slideblock slider__frame">
+                <p><span>Лукойл</span></p>
+                <p>Москва</p>
+                <button class="info hidden">Подробнее</button>
+            </div>
+            <div class="slider__slideblock slider__frame">
+                <p><span>Unilever</span></p>
+                <p>Спб</p>
+                <button class="info hidden">Подробнее</button>
+            </div>
+            <div class="slider__slideblock slider__frame">
+                <p><span>Олимпик</span></p>
+                <p>Спб</p>
+                <button class="info hidden">Подробнее</button>
+            </div>
+
+            <div id="prev" class="slider__arrow slider__arrow_prev">
+                <div class="slider__icon">
+                    <img src="./icons/elements/arrow_prev.svg" alt="arrow">
+                </div>
+            </div>
+            <div id="next" class="slider__arrow slider__arrow_next">
+                <div class="slider__icon">
+                    <img src="./icons/elements/arrow_next.svg" alt="arrow">
+                </div>
+            </div>
+        </div>
+        <div class="slider__nav">
+            <div data-dot="0" class="slider__dot slider__dot_active"></div>
+            <div data-dot="1" class="slider__dot"></div>
+            <div data-dot="2" class="slider__dot"></div>
+        </div>    
+    </section>
+
+    <section id="advantages" class="advantages">
+        <div class="container">
+            <h2 class="headings__h2 advantages__h2">Преимущества</h2>
+        </div>
+        <div class="separator separator_left"></div>
+        <div class="container advantages__container">
+            <div class="advantages__row">
+                <div class="advantages__column1">
+                    <img class="advantages__img" src="./img/04_advantages/image1.png" alt="">
+                    <div class="advantages__gradient"></div>
+                    <div class="advantages__text">Более 20 лет<br> на рынке</div>
+                </div>
+                <div class="advantages__column2">
+                    <div class="advantages__separator"></div>
+                </div>
+                <div class="advantages__column3">
+                    <div class="advantages__circle">
+                        <div class="advantages__inner"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="advantages__row">
+                <div class="advantages__column1">
+                    <div class="advantages__circle">
+                        <div class="advantages__inner advantages__inner_yellow"></div>
+                    </div>
+                </div>
+                <div class="advantages__column2">
+                    <div class="advantages__separator"></div>
+                </div>
+                <div class="advantages__column3">
+                    <img class="advantages__img" src="./img/04_advantages/image2.png" alt="">
+                    <div class="advantages__gradient advantages__gradient_right"></div>
+                    <div class="advantages__text">Лучшие сертификации</div>
+                </div>
+
+            </div>
+            <div class="advantages__row">
+                <div class="advantages__column1">
+                    <img class="advantages__img" src="./img/04_advantages/image3.png" alt="">
+                    <div class="advantages__gradient"></div>
+                    <div class="advantages__text">Весь спектр работ</div>
+                </div>
+                <div class="advantages__column2">
+                    <div class="advantages__separator"></div>
+                </div>
+                <div class="advantages__column3">
+                    <div class="advantages__circle">
+                        <div class="advantages__inner"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts" class="contacts">
+        <div class="container">
+            <h2 class="headings__h2 contacts__h2">Контакты</h2>
+        </div>
+        <div class="separator separator_left"></div>
+        <div class="container">
+            <div class="contacts__row">
+                <img src="./icons/05_contacts/tel.svg" alt="tel" class="contacts__icon">
+                <p class="contacts__descr">Контактные телефоны</p>
+                <p class="contacts__tel">+7 812 535 24 84</p>
+                <p class="contacts__tel">+7 921 964 68 65</p>
+            </div>
+            <div class="contacts__row">
+                <img src="./icons/05_contacts/mail.svg" alt="mail" class="contacts__icon">
+                <p class="contacts__descr">Email</p>
+                <p class="contacts__tel">vent@geser.biz</p>
+            </div>
+            <div class="contacts__row">
+                <img src="./icons/05_contacts/marker.svg" alt="marker" class="contacts__icon">
+                <p class="contacts__descr">Адрес</p>
+                <address class="contacts__address">
+                    Санкт-Петербург, Калининский район, проспект Непокоренных, 47, оф. № 3-248.
+                    <span>Посмотреть на карте</span>
+                </address>
+            </div>
+            <div class="row">
+                <img src="./icons/05_contacts/map.svg" alt="">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>2021</p>
+    </footer>
+
+    <section class="popup hidden">
+        <div id="popup_first" class="popup__modal hidden">
+            <div class="popup__close"></div>
+            <div class="popup__header">
+                Заказать монтаж
+            </div>
+            <hr>
+            <div class="popup__note">
+                Введите ваши контактные данные <br>
+                Мы свяжемся с вами для уточнения деталей
+            </div>
+            <form action="" class="popup__form">
+                <input required id="name" name="name" class="popup__text" placeholder="Ваше имя" type="text">
+                <input required id="org" name="org" class="popup__text" placeholder="Организация" type="text">
+                <input required id="phone" name="phone" class="popup__text" placeholder="Телефон или эл. почта" type="tel">
+                <button disabled  id="button_submit" class="btn btn__popup btn__popup_disabled" type="">Заказать</button>
+            </form>
+        </div>
+
+        <div id="popup_second" class="popup__modal hidden">
+            <div class="popup__close"></div>
+            <div class="popup__header">
+                Заказать монтаж
+            </div>
+            <hr>
+            <div class="popup__reply">Спасибо за ваш заказ!</div>
+            <div class="popup__callback">
+                Наши специалисты скоро свяжутся с вами для уточнения деталй заказа
+            </div>
+            <button id="button_close" class="btn btn__popup btn__popup_close">Закрыть</button>
+        </div>
+    </section>
+    <script src="js/smooth-scroll.min.js"></script>
+    <script>
+        const scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+    <script src="js/script.js"></script>
+</body>
+</html>
